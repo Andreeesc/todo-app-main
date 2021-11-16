@@ -1,0 +1,174 @@
+main{
+  max-width: 780px;
+  margin: 0 auto;
+  margin-top: -50px;
+  border-radius: 10px;
+  background-color: var(--VeryDarkDesaturatedBlue);
+}
+@media (max-width:767px){
+  main{
+    max-width: 320px;
+    margin-bottom: 40px;
+  }
+}
+
+main section span,
+main section p,
+main section .filter label{
+  font-size: .75rem;
+  color: var(--DarkGrayishBlue);
+}
+
+main section p:hover,
+main section .filter label:hover{
+  cursor: pointer;
+}
+
+
+/* Fieldset */
+main fieldset{
+  position: relative;
+  padding: 20px 20px 20px 60px;
+  border: none;
+  border-bottom: 1px solid var(--VeryDarkGrayishBlue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:767px){
+  main fieldset{
+    padding-left: 50px;
+  }
+}
+main fieldset input[type=checkbox]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  top: 15px;
+  left: 20px;
+}
+main fieldset label{
+  color: var(--LightGrayishBlue);
+  text-decoration: none;
+  font-weight: 300;
+  transition: all ease .5s;
+}
+@media (max-width:767px){
+  main fieldset label{
+    font-size: .75rem;
+  }
+}
+
+main fieldset input[type=checkbox]:checked ~ label{
+  text-decoration: line-through;
+  color: var(--VeryDarkGrayishBlue);
+}
+
+/* Custom Checkbox */
+main fieldset .checkmark {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--VeryDarkGrayishBlue);
+}
+@media (max-width:767px){
+  main fieldset .checkmark {
+    top: 18px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+main fieldset .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid transparent;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media (max-width:767px){
+  main fieldset .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 4px;
+    height: 8px;
+    border-width: 0 2px 2px 0;
+  }
+}
+
+main fieldset input[type=checkbox]:checked ~ .checkmark {
+  background: linear-gradient(90deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
+}
+main fieldset input[type=checkbox]:checked ~ .checkmark:after {
+  display: block;
+  border-color: white;
+}
+
+main fieldset .remove{
+  opacity: 0;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+main fieldset input[type=checkbox]:checked ~ .remove{
+  opacity: 1;
+}
+
+
+/* Section */
+main section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+@media (max-width:767px){
+  main section{
+    flex-direction: column;
+  }
+}
+main section p{
+  margin: 0;
+}
+main section p:hover{
+  color: var(--VeryLightGray);
+}
+
+
+/* Filter */
+main section .filter{
+  display: flex;
+}
+@media (max-width:767px){
+  main section .filter{
+    margin: 20px 0;
+    margin-left: -15px;
+  }
+}
+
+main section .filter input[type=radio]{
+  opacity: 0;
+  visibility: hidden;
+}
+main section .filter input[type=radio]:checked + label{
+  color: var(--blue)
+}
+
+main section .filter label{
+  margin-left: 0px;
+}
+main section .filter label:hover{
+  color: var(--VeryLightGray);
+}

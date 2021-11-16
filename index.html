@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Todo</h1>
+    <input type="text" name="todo" id="todo">
+  </header>
+
+  <main>
+
+    <fieldset>
+      <input type="checkbox" name="todo-001" id="todo-001" checked>
+      <span class="checkmark"></span>
+      <label for="todo-001">Complete todo</label>
+      <span class="remove">
+        <img src="./assets/images/icon-cross.svg" alt="">
+      </span>
+    </fieldset>
+
+    <fieldset>
+      <input type="checkbox" name="todo-002" id="todo-002">
+      <span class="checkmark"></span>
+      <label for="todo-002">Complete javascript course</label>
+      <span class="remove">
+        <img src="./assets/images/icon-cross.svg" alt="">
+      </span>
+    </fieldset>
+
+    <fieldset>
+      <input type="checkbox" name="todo-003" id="todo-003">
+      <span class="checkmark"></span>
+      <label for="todo-003">Find a job</label>
+      <span class="remove">
+        <img src="./assets/images/icon-cross.svg" alt="">
+      </span>
+    </fieldset>
+
+    <section>
+      <span>0 items left</span>
+
+      <div class="filter">
+        <div>
+          <input type="radio" name="filter" id="All" checked>
+          <label for="All">All</label>
+        </div>
+        <div>
+          <input type="radio" name="filter" id="Active">
+          <label for="Active">Active</label>
+        </div>
+        <div>
+          <input type="radio" name="filter" id="Completed">
+          <label for="Completed">Completed</label>
+        </div>
+      </div>
+      
+      <p>Clear Completed</p>
+    </section>
+  </main>
+  
+
+</body>
+</html>
