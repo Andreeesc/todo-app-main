@@ -1,5 +1,7 @@
 # Frontend Mentor - Todo app
 
+This project can be seen at: [https://andreeesc.github.io/todo-app-main/](https://andreeesc.github.io/todo-app-main/)
+
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
