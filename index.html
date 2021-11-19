@@ -25,34 +25,18 @@
 
   <main>
 
-    <fieldset>
-      <input type="checkbox" name="todo-001" id="todo-001" checked>
-      <span class="checkmark"></span>
-      <label for="todo-001">Complete todo</label>
-      <span class="remove">
-        <img src="./assets/images/icon-cross.svg" alt="">
-      </span>
-    </fieldset>
+    <section id="todo-list">
+      <fieldset class="todo-0001">
+        <input type="checkbox" name="todo-0001" id="todo-0001" class="completed" checked>
+        <span class="checkmark"></span>
+        <label for="todo-0001">Todo list</label>
+        <span class="remove todo-0001">
+          <img src="./assets/images/icon-cross.svg" alt="">
+        </span>
+      </fieldset>
+    </section>    
 
-    <fieldset>
-      <input type="checkbox" name="todo-002" id="todo-002">
-      <span class="checkmark"></span>
-      <label for="todo-002">Complete javascript course</label>
-      <span class="remove">
-        <img src="./assets/images/icon-cross.svg" alt="">
-      </span>
-    </fieldset>
-
-    <fieldset>
-      <input type="checkbox" name="todo-003" id="todo-003">
-      <span class="checkmark"></span>
-      <label for="todo-003">Find a job</label>
-      <span class="remove">
-        <img src="./assets/images/icon-cross.svg" alt="">
-      </span>
-    </fieldset>
-
-    <section>
+    <section class="meta">
       <span>0 items left</span>
 
       <div class="filter">
@@ -70,10 +54,13 @@
         </div>
       </div>
       
-      <p>Clear Completed</p>
+      <p class="clear">Clear Completed</p>
     </section>
   </main>
   
+  <script src="./assets/js/todo.js"></script>
+  <script src="./assets/js/removeTodo.js"></script>
+  <script src="./assets/js/clear.js"></script>
 
 </body>
 </html>

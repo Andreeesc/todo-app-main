@@ -128,14 +128,14 @@ main fieldset input[type=checkbox]:checked ~ .remove{
 
 
 /* Section */
-main section{
+main section.meta{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 @media (max-width:767px){
-  main section{
+  main section.meta{
     flex-direction: column;
   }
 }
