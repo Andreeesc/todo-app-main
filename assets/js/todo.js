@@ -9,8 +9,8 @@ todoInput.addEventListener('keyup', function(e){
     const todoValue = todoInput.value
 
     const html = `
-      <fieldset class="${todoNumber}">
-        <input type="checkbox" name="${todoNumber}" id="${todoNumber}" class="active">
+      <fieldset class="${todoNumber} active">
+        <input type="checkbox" name="${todoNumber}" id="${todoNumber}">
         <span class="checkmark"></span>
         <label for="${todoNumber}">${todoValue}</label>
         <span class="remove ${todoNumber}">
@@ -19,5 +19,8 @@ todoInput.addEventListener('keyup', function(e){
       </fieldset>
     `
     todoList.innerHTML += html
+    this.value = ''
   }
+
+  itemsLeft()
 })
